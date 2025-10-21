@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm Nông Sản Truy Xuất Nguồn Gốc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-icon {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .product-card h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .product-card p {
+            color: #7f8c8d;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-features {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+            color: #34495e;
+        }
+
+        .feature::before {
+            content: '✓';
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .btn-view {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover .btn-view {
+            transform: scale(1.05);
+        }
+
+        .cashew-card {
+            border-top: 5px solid #d4a574;
+        }
+
+        .pomelo-card {
+            border-top: 5px solid #2ecc71;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 3rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-card {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌾 Sản Phẩm Nông Sản</h1>
+            <p>Truy xuất nguồn gốc - An toàn - Chất lượng</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- Hạt Điều Rang Muối -->
+            <a href="hat-dieu.html" class="product-card cashew-card">
+                <span class="product-icon">🥜</span>
+                <h2>Hạt Điều Rang Muối</h2>
+                <p>Chất lượng từ trái tim, thành công từ sự chân thành</p>
+                <div class="product-features">
+                    <span class="feature">Giòn tan thơm ngon</span>
+                    <span class="feature">Không chất bảo quản</span>
+                    <span class="feature">Rang thủ công truyền thống</span>
+                    <span class="feature">Giàu protein và dinh dưỡng</span>
+                </div>
+                <span class="btn-view">Xem Chi Tiết →</span>
+            </a>
+
+            <!-- Bưởi Da Xanh -->
+            <a href="index.html" class="product-card pomelo-card">
+                <span class="product-icon">🍊</span>
+                <h2>Bưởi Da Xanh</h2>
+                <p>Sản phẩm hữu cơ đặc sản từ Sông Xoài - Bà Rịa Vũng Tàu</p>
+                <div class="product-features">
+                    <span class="feature">Hữu cơ 100%</span>
+                    <span class="feature">Ngọt thanh tự nhiên</span>
+                    <span class="feature">Ít hạt - Tép hồng</span>
+                    <span class="feature">Chứng nhận hữu cơ</span>
+                </div>
+                <span class="btn-view">Xem Chi Tiết →</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Sản phẩm nông sản Việt Nam. Bảo lưu mọi quyền.</p>
+        </div>
+    </div>
+</body>
+</html>
+
